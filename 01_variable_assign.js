@@ -31,13 +31,6 @@ var isMarried = "No";
 console.log("First Name:",firstName, "Last Name:",lastName, "Age:",age, "City:",address, "Pincode:", pincode, 
 "Gender:",gender, "Marrital Status Is Married:",isMarried);
 
-
-
-
-
-
-
-
 // console.log("********** STEP-1 **********");
 // var city; // Variable Declaration
 // console.log(city);
