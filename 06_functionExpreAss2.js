@@ -1,4 +1,4 @@
- function checkLeapYear(leapYear) {
+ var checkLeapYear = function(leapYear) {
     
     if (leapYear == null || (typeof (leapYear) != "number") || leapYear == undefined || isNaN(leapYear)) {
         
