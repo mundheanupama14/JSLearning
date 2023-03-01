@@ -31,7 +31,7 @@ console.log("**************** STEP-2 ****************");
 
 function gradeCalculation(marks) {
 
-    if (marks <= 0 || marks > 100 || (typeof marks!="number") || marks != marks || marks == null) {
+    if (marks <= 0 || marks > 100 || (typeof marks!="number") || isNaN(marks) || marks == null) {
 
         console.log(`Please provide the valid marks: ${marks}`);
     }

@@ -27,7 +27,7 @@ function gradeCalculation(marks){
 
     // If marks is 0 or less than 0 or grater than 100 or not invalid number format
     // Ex. "56" or "Seventy" then log the message - Please provide the valid marks
-    if (marks <= 0 || marks > 100 || (typeof marks != "number" || marks != marks || marks == undefined || marks == null)) {
+    if (marks <= 0 || marks > 100 || (typeof marks != "number") || isNaN(marks) || marks == undefined || marks == null){
 
         console.log(`Please provides the valid marks - ${marks}`);
     }
