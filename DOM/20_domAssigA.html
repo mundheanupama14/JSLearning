@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> DOM Assignment A </title>
+</head>
+
+<body>
+    <main>
+
+        <div id="overview">
+            <h1> HTML & JavaScript are crucial Technologies </h1>
+            <p> The web would not work without them... </p>
+        </div>
+
+        <div id="advantages">
+            <ul>
+                <li class="liItem"> Flexible </li>
+                <li class="liItem"> Available </li>
+                <li class="liItem"> Magical </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script>
+        // Your solution code goes here
+
+        console.log("====== API getElementsByTagName() to select Element by Tag Name ======");
+        console.log(`********** h1 Element store in mainHeading whose tag is "h1" **********`);
+        const mainHeading = document.getElementsByTagName("h1");
+        console.log(mainHeading[0].innerHTML);
+
+        console.log("====== API getElementsByClassName() to select Element by Class Name ======");
+        console.log(`****** li Element store in secondAdvantage whose class is "liItem" ******`);
+        const secondAdvantage = document.getElementsByClassName("liItem");
+        console.log(secondAdvantage[1].innerHTML);
+
+        console.log("====== API getElementById() to select Element by Id Name ======");
+        console.log(`****** div Element store in advDiv whose id is "advantages" ******`);
+        const advDiv = document.getElementById("advantages");
+        console.log(advDiv.innerHTML);
+
+    </script>
+
+</body>
+
+</html>
