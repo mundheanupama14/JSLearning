@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prime Number</title>
+</head>
+
+<body>
+
+    <button type="button" id="myHobbies1"> Enter Your Hobbies </button>
+    <br>
+    <br>
+    <button type="button" id="isPrimeButton"> Check Number is Prime or Not </button>
+
+    <script>
+
+        console.log(`============== Enter Your Hobbies ==============`);
+        const myHobbies = document.querySelector("#myHobbies1");
+        myHobbies.addEventListener('click', () => {
+            const inputValue = prompt("Please enter your Hobbies..",);
+            console.log(inputValue);
+        });
+
+        console.log(`============== Check Whether Given Number is Prime or Not ==============`);
+        const primeNumber = document.querySelector("#isPrimeButton");
+        primeNumber.addEventListener('click', () => {
+            const inputValue = prompt("Please enter number to check..", 0);
+            function isPrime(num) {
+                for (let i = 2; i < num; i++) {
+                    if (num % i == 0) {
+                        return `${num} is not prime`
+                    }
+                }
+                return `${num} is Prime`
+            }
+            let result = isPrime(inputValue)
+            alert(result)
+            console.log(result);
+        });
+
+    </script>
+</body>
+
+</html>
